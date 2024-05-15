@@ -1,12 +1,23 @@
 import styles from "./authLink.module.css"
 import React from 'react'
+import Link from 'next/link'
 
 const AuthLink = () =>
 {
-  
+  const status = "notauthenticated"
   return (
-    <div className={styles.container}>AuthLink</div>
-  )
+  <>
+    {status ==="notauthenticated" ? (
+      <Link href="/login">Login</Link>
+    ) : (
+      <>
+        <Link href="/write">Write</Link>
+        <span className={styles.link}> Logout </span>
+      </>
+    )}
+  </>
+  );
+    
   
 }
 

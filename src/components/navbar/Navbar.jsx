@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import AuthLink from "../authLink/authLink"
-import ThemeToggle from "../themeToggle/themeToggle"
+import ThemeToggle from "../themeToggle/themeContext"
 
 const Navbar = () =>
 {
