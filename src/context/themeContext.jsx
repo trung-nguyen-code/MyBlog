@@ -1,29 +1,31 @@
-"use client"
+"use client";
 
-import { createContext, useState, useEffect } from 'react'
+import { createContext, useState, useEffect } from "react";
 export const ThemeContext = createContext();
 
-const  getFromLocalStorage = () => {
-  if (typeof window !== "undefined" ){
-
-  const value = window.localStorage.getItem("theme");
-  return  value || "light";
+const getFromLocalStorage = () => {
+  if (typeof window !== "undefined") {
+    const value = window.localStorage.getItem("theme");
+    return value || "light";
   }
 };
 
-export const ThemeContextProvider = ({children}) =>{
-   const [theme, setTheme] = useState(() => {
+export const ThemeContextProvider = ({ children }) => {
+  const [theme, setTheme] = useState(() => {
     return getFromLocalStorage();
-   });
+  });
 
-   const toggle = () => {
-    setTheme(theme === "light" ? "dark": "light");
-   }
+  const toggle = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
-   useEffect(() => {
+  useEffect(() => {
     window.localStorage.setItem("theme", theme);
   }, [theme]);
-   
-   return <ThemeContext.Provider value={{theme,toggle}}>{children}</ThemeContext.Provider>;
 
+  return (
+    <ThemeContext.Provider value={{ theme, toggle }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 };
