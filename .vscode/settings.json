@@ -28,7 +28,7 @@
   "emmet.triggerExpansionOnTab": true,
   "prettier.endOfLine": "lf",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": false
+    "source.fixAll.eslint": "never"
   },
   "eslint.validate": ["typescriptreact"],
   "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
