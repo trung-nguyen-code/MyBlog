@@ -20,12 +20,9 @@ const CategoryList = () => {
               height={32}
               className={styles.image}
             />
-            style
+            Philosophy
           </Link>
-          <Link
-            href={"/blog"}
-            className={`${styles.category} ${styles.fashion}`}
-          >
+          <Link href={"/blog"} className={`${styles.category} ${styles.green}`}>
             <Image
               src="/fashion.png"
               alt=""
@@ -33,30 +30,7 @@ const CategoryList = () => {
               height={32}
               className={styles.image}
             />
-            fashion
-          </Link>
-          <Link href={"/blog"} className={`${styles.category} ${styles.food}`}>
-            <Image
-              src="/fashion.png"
-              alt=""
-              width={32}
-              height={32}
-              className={styles.image}
-            />
-            food
-          </Link>
-          <Link
-            href={"/blog"}
-            className={`${styles.category} ${styles.travel}`}
-          >
-            <Image
-              src="/travel.png"
-              alt=""
-              width={32}
-              height={32}
-              className={styles.image}
-            />
-            travel
+            Green Life
           </Link>
           <Link
             href={"/blog"}
@@ -70,6 +44,19 @@ const CategoryList = () => {
               className={styles.image}
             />
             culture
+          </Link>
+          <Link
+            href={"/blog"}
+            className={`${styles.category} ${styles.invent}`}
+          >
+            <Image
+              src="/food.png"
+              alt=""
+              width={32}
+              height={32}
+              className={styles.image}
+            />
+            engineering
           </Link>
           <Link
             href={"/blog"}

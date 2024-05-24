@@ -41,7 +41,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "liveServer.settings.donotShowInfoMsg": true,
   "workbench.colorCustomizations": {},
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "workbench.startupEditor": "none",
   "prettier.trailingComma": "none",
   "editor.formatOnSave": true,
