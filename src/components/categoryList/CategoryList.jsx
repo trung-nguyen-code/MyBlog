@@ -6,7 +6,9 @@ import Image from "next/image";
 const CategoryList = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Popular Categories</h1>
+      <div>
+        <h1 className={styles.title}>Popular Categories</h1>
+      </div>
       <div className={styles.categories}>
         <div className={styles.category}>
           <Link
@@ -70,6 +72,19 @@ const CategoryList = () => {
               className={styles.image}
             />
             coding
+          </Link>
+          <Link
+            href={"/blog"}
+            className={`${styles.category} ${styles.literature}`}
+          >
+            <Image
+              src="/coding.png"
+              alt=""
+              width={32}
+              height={32}
+              className={styles.image}
+            />
+            Literature
           </Link>
         </div>
       </div>
